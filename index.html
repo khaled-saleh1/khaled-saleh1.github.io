@@ -1,278 +1,400 @@
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <!-- Put your site title here -->
+    <title>Khaled Saleh | A Software Engineer Student.</title>
 
-  <!-- Put your site title here -->
-  <title>
-    Khaled Saleh | A Software Engineer Student.
-  </title>
+    <meta name="description" content="Add small description of yourslef." />
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta
+      name="keywords"
+      content="Put your name, skills and some coding keywords"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
-</head>
+  <body>
+    <!-- ***** Header ***** -->
 
-<body>
+    <header class="header" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
 
-  <!-- ***** Header ***** -->
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <!-- Replace the following name with your name -->
+            <span>Khaled Saleh</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <p>A Software Engineering Student at Concordia University .</p>
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
+      </div>
+    </header>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-        
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+    <main role="main">
+      <!-- ***** Work ***** -->
+
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My Work</h2>
+          <div class="work__boxes">
+            <!-- Each div with the work__box class is a project. -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Hand-Controlled Flight Simulator</h3>
+                <p>
+                  ConUHacks Hackathon (CAE Sponsored Challenge Winners (1st
+                  place) )
+                </p>
+                <ul class="work__list">
+                  <li>
+                    Collaborated with a team of four to conceptualize, design,
+                    and program a flight simulator that could be controlled
+                    through hand gestures.
+                  </li>
+                  <li>
+                    Utilized Unity, Python, and C# to develop the flight
+                    simulator, delivering an engaging and interactive experience
+                    for users.
+                  </li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://github.com/AbdallahSaid01/ConUHacks-2023"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/khaled-saleh1"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <iframe
+                  width="760"
+                  height="415"
+                  src="https://www.youtube.com/embed/vDmcx5VmGMY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Spacecraft Shooting Game</h3>
+                <p>Personal Project in C++.</p>
+                <ul class="work__list">
+                  <li>
+                    Designed and implemented interactive gameplay features,
+                    allowing for an engaging and immersive user experience using
+                    C++ and SFML library.
+                  </li>
+                  <li>
+                    Successfully integrated user input and gameplay mechanics to
+                    create a seamless and enjoyable gaming experience.
+                  </li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://github.com/TarekElalfi/Shooting-Game"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/khaled-saleh1"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/SpaceCraftShooting.png"
+                  class="work__image"
+                  alt="Project 1"
+                />
+              </div>
+            </div>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Jobify</h3>
+                <p>Career Service Application Web App.</p>
+                <ul class="work__list">
+                  <li>
+                    Led frontend development efforts in a six-person team that
+                    designed and developed a comprehensive job application web
+                    app, ensuring high-quality code.
+                  </li>
+                  <li>
+                    Utilized technologies such as React, Node.js, and MongoDB to
+                    develop the website, providing users with an intuitive and
+                    user-friendly experience.
+                  </li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://github.com/ramy-att/trivial-soen341project2023"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/khaled-saleh1"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <iframe
+                  width="760"
+                  height="415"
+                  src="https://www.youtube.com/embed/lMcfmNYJRcQ"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Snake and Ladder</h3>
+                <p>Simulation of the board game Snake and Ladder.</p>
+                <ul class="work__list">
+                  <li>
+                    The simulation is created in java strengthened my skills in
+                    object-oriented programming.
+                  </li>
+                  <li>
+                    Sorting the turns of players improved my understanding and
+                    skills in arrays
+                  </li>
+                  <li>User Interactive Game</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://github.com/khaled-saleh1/Snake-and-Ladder.git"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/khaled-saleh1"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/Snake And Ladder Console .png"
+                  class="work__image"
+                  alt="Project 1"
+                />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Grocery Website</h3>
+                <p>
+                  Led a team of 6: Organized meetings, delegated tasks, and
+                  helped teammates debug.
+                </p>
+                <ul class="work__list">
+                  <li>Html</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://theone-7f416.web.app/index.html"
+                    class="link__text"
+                  >
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <!-- <a href="#"> -->
+                  <!-- <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub"> -->
+                  <!-- </a> -->
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/GroceryWebsite.png"
+                  class="work__image"
+                  alt="Project 3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** About ***** -->
+
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <!-- Replace the below paragraph with info about yourself -->
+              <p>
+                I am a Software Engineering Co-op student with a strong
+                background in programming languages such as Java, Python, C#,
+                C++, and web technologies like React, Node.js, and MongoDB. I
+                have collaborated on projects including a C++ spacecraft
+                shooting game using the SFML library and led frontend
+                development for a job application web app. Additionally, I have
+                won first place ConUHacks CAE Sponsored Challenge by developing
+                a hand-controlled flight simulator. I possess strong
+                problem-solving skills, adaptability, and effective
+                communication abilities. With a passion for continuous learning,
+                I am eager to contribute my skills and knowledge to a dynamic
+                software development team, taking on new challenges and driving
+                innovation.
+              </p>
+
+              <a href="./CV/CV(F2023).pdf" class="btn" download>My Resume</a>
+            </div>
+
+            <div class="about__photo-container">
+              <!-- Add a nice photo of yourself -->
+              <img class="about__photo" src="./images/Profile Pic.JPG" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ***** Contact ***** -->
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            Are you looking for a Software Engineer intern who is willing to
+            help the company with the knowledge gained in programming so far and
+            willing to learn more ? Then the best and quickest way to reach out
+            to me is via my email .
+          </p>
+          <!-- Replace the email with yours -->
+          <a href="mailto:ksaleh10611@gmail.com" class="btn"
+            >ksaleh10611@gmail.com</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Footer ***** -->
+
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <!-- Update the links to point to your accounts -->
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a
+              href="https://github.com/khaled-saleh1"
+              title="Link to Github Profile"
+            >
+              <img
+                src="./images/github.svg"
+                class="footer__social-image"
+                alt="Github"
+              />
+            </a>
           </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/khaled-saleh6/">
+              <img
+                src="./images/linkedin.svg"
+                title="Link to Linkedin Profile"
+                class="footer__social-image"
+                alt="Linkedin"
+              />
+            </a>
           </li>
         </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Khaled Saleh</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Software Engineering Student at Concordia University  .</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
 
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Snake and Ladder</h3>
-              <p>
-                Simulation of the board game Snake and Ladder. 
-              </p>
-              <ul class="work__list">
-                <li>The simulation is created in java strengthened my skills in object-oriented programming. </li>
-                <li>Sorting the turns of players improved my understanding and skills in arrays</li>
-                <li>User Interactive Game </li>
-                
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/khaled106/Snake-and-Ladder.git" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/khaled106" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/Snake And Ladder Console .png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <!-- <div class="work__box"> -->
-            <!-- <div class="work__text"> -->
-              <!-- <h3>Calculator</h3> -->
-              <!-- <p> -->
-                <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, -->
-                <!-- eius. -->
-              <!-- </p> -->
-              <!-- <ul class="work__list"> -->
-                <!-- <li>React</li> -->
-                <!-- <li>Next.js</li> -->
-                <!-- <li>Node</li> -->
-                <!-- <li>MongoDB</li> -->
-              <!-- </ul> -->
-
-              <!-- <div class="work__links"> -->
-                <!-- <a href="#" class="link__text"> -->
-                  <!-- Visit Site <span>&rarr;</span> -->
-                <!-- </a> -->
-                <!-- <a href="#"> -->
-                  <!-- <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub"> -->
-                <!-- </a> -->
-              <!-- </div> -->
-            <!-- </div> -->
-            <!-- <div class="work__image-box"> -->
-              <!-- <img src="./images/project-2.png" class="work__image" alt="Project 1" /> -->
-            <!-- </div> -->
-          <!-- </div> -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Grocery Website</h3>
-              <p>
-                	Led a team of 6: Organized meetings, delegated tasks, and helped teammates debug.
-                
-              </p>
-              <ul class="work__list">
-                <li>Html</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://theone-7f416.web.app/index.html" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <!-- <a href="#"> -->
-                  <!-- <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub"> -->
-                <!-- </a> -->
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/GroceryWebsite.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-   
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-                Future Software Engineer, I am currently a software engineering student at Concordia University.  I started my studies at Concordia in fall 2021 after I finished pure and applied sciences DEC at Dawson College. 
-                I gained some skills as time-management, critical thinking and organizing during my time in Dawson college and I am improving them even more now at Concordia University. My main goal now is to learn and improve my skills in programming by working on school project and some personal projects as well during my time at Concordia 
-                
-              <!-- nostrum illo harum blanditiis, tenetur eum suscipit cupiditate -->
-              <!-- in vel, ex quam quidem quos mollitia labore aut sunt eius -->
-              <!-- ratione molestiae fuga veniam facere similique voluptate. -->
-            </p>
-            <!-- Provide a link to your resume -->
-            <!-- <a href="test_file.zip" download>Download File</a> -->
-            <!-- <a href="./directory/yourfile.pdf" download>Download the pdf</a> -->
-            <a href="./CV/KS_Gina_Cody_School_of_Engineering_and_Computer_Science_Rsum_T.docx" class="btn" download >My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/Profile Pic.JPG" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a Software Engineer intern who is willing to help the company 
-          with the knowledge gained in programming so far and willing to learn more ?
-          Then the best and quickest way to reach out to me is via my email .
-          <!-- represent your product or business? or looking for any kind of -->
-          <!-- consultation? or want to ask questions? or have some advice for me -->
-          <!-- or just want to say "Hi 👋" in any case feel free to Let me know. I -->
-          <!-- will do my best to respond back. 😊 The quickest way to reach out to -->
-          <!-- me is via an email. -->
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:ksaleh10611@gmail.com" class="btn">ksaleh10611@gmail.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/Khaled_Saleh6" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/khaled106" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        
-        
-        
-        
-        
-        <li class="footer__social-link-item">
-          <a href="www.linkedin.com/in/khaled-saleh6">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2022 Khaled Saleh
-      </p>
-      <!-- <div class="footer__github-buttons"> -->
+        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+        <p>&copy; 2022 Khaled Saleh</p>
+        <!-- <div class="footer__github-buttons"> -->
         <!-- <iframe -->
-          <!-- src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true" -->
-          <!-- frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub"> -->
+        <!-- src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true" -->
+        <!-- frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub"> -->
         <!-- </iframe> -->
-      <!-- </div> -->
-    </div>
-  </footer>
+        <!-- </div> -->
+      </div>
+    </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
-
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+    <script src="./index.js"></script>
+  </body>
 </html>
